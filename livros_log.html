@@ -1,0 +1,589 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- owl carousel min.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- owl carousel default.theme.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- fontAwesome -->
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    
+
+    <link rel="stylesheet" href="../css/livros_log.css">
+    <link rel="icon" type="image/png" href="../img/logo_marrom.png">
+    <title>StarBook</title>
+
+    
+    <!-- navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-sticky  border-bottom">
+      <div class="container">
+        <a href="./index.html" class="navbar-brand"><img src="../img/logo_marrom.png" width="90px" alt="Logo" id="logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown link
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+
+
+  <!--<nav id="mainNav" class="navbar navbar-expand-lg navbar-sticky navbar-light border-bottom">
+    <div class="container">
+      <a href="./index.html" class="navbar-brand"><img src="../img/logo_marrom.png" width="90px" alt="Logo" id="logo"></a>
+
+      <ul class="navbar-nav navbar-nav-secondary order-lg-3">
+
+        <div class="icons">
+        <li class="nav-item d-lg-none">
+          <a class="nav-link nav-icon" href="#" role="button" data-bs-toggle="collapse" data-bs-target="#userNav"
+            aria-expanded="false">
+            <img src="../img/icon_favoritos.png" alt="coracao" width="35px">
+        </a>
+        </li>
+        <li class="nav-item d-lg-none">
+          <a class="nav-link nav-icon" href="#" role="button" data-bs-toggle="collapse" data-bs-target="#userNav"
+            aria-expanded="false">
+            <img src="../img/icon_user.png" width="35px" alt="user">
+        </a>
+        </li>
+      </div>
+
+        <li class="nav-item dropdown dropdown-hover d-none d-lg-block" id="icon_fav">
+          <a href="#">
+            <img src="../img/icon_favoritos.png" alt="coracao" width="35px">
+            
+          </a>
+        </li>
+        <li class="nav-item dropdown dropdown-hover d-none d-lg-block" id="icon_user">
+          <a href="#">
+            <img src="../img/icon_user.png" alt="user" width="35px">
+            
+          </a>
+        </li>
+        <li class="nav-item d-lg-none">
+          <a class="nav-link nav-icon" href="" role="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+            aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <img src="..//img/menu.png" alt="menu" width="20px">
+          </a>
+        </li>
+
+        <li class="nav-item d-none d-lg-block" id="bt_faleConosco">
+          <a href="#">
+            <button type="button" class="btn btn-outline-secondary rounded-pill" id="bt_fale">Fale Conosco</button>
+          </a>
+          
+        </li>
+      </ul>
+
+     
+      <div class="collapse navbar-collapse" id="navbarr" data-bs-parent="#mainNav">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown dropdown-hover">
+            Home
+          </li>
+        </ul>
+        
+
+        <div class="collapse navbar-collapse" id="navbar" data-bs-parent="#mainNav">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown dropdown-hover">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-4" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false" data-bs-auto-close="outside">
+                Livros
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown-4">
+
+                <li class="dropend dropend-hover">
+                  <a class="dropdown-item dropdown-toggle  active" href="#" id="navbarDropend-1"
+                    data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">Categorias</a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropend-1">
+                    <li><a class="dropdown-item " href="#">Ação</a></li>
+                    <li><a class="dropdown-item " href="#">Ação</a></li>
+                    <li><a class="dropdown-item " href="#">Ação</a></li>
+                  </ul>
+                </li>
+
+                <li><a class="dropdown-item " href="#">Histórico</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown dropdown-hover">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-1" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Conta
+              </a>
+
+              <ul class="dropdown-menu dropdown-menu-md" aria-labelledby="navbarDropdown-1">
+                <li><a class="dropdown-item " href="#">Cadastrar-se</a></li>
+                <li><a class="dropdown-item " href="#">Login</a></li>
+              </ul>
+            </li>
+
+
+
+            
+
+
+            <li class="nav-item dropdown dropdown-hover">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-3" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false" data-bs-auto-close="outside">
+                Cadastros
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown-3">
+                <li><a class="dropdown-item " href="https://www.instagram.com/">Livros</a></li>
+                <li><a class="dropdown-item " href="https://twitter.com/">Empréstmos</a></li>
+                <li><a class="dropdown-item " href="https://pt-br.facebook.com/">Devoluções</a></li>
+                <li><a class="dropdown-item " href="https://www.youtube.com/">Alunos</a></li>
+
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+  </nav>-->
+  <!--------------------------------------------------------------------------------------- fim do menu ------------------------------------------------------------------------------------->
+
+  </head>
+  <body>
+    
+    
+    <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+    
+    
+  <!------------------------------ pesquisa ao lado---------------------------->
+  <div class="offcanvas-wrap">
+
+    <section class="py-15 py-xl-20">
+      <div class="container mt-5">
+        <div class="row g-3 g-md-5 align-items-end mb-5">
+          <div class="col-md-6">
+            <h1 class="mb-2">Pesquisa</h1>
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#" id="link_pesquisar">Livros</a></li>
+                <li class="breadcrumb-item"><a href="#" id="link_pesquisar">Categorias</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Favoritos</li>
+              </ol>
+            </nav>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <div class="dropdown" >
+                  <a class="underline text-black"  href="#" id="link_pesquisar" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                    aria-expanded="false" >
+                    Ordem de aparição
+                    <!-- icon de seta pra baixo--> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                  </a>
+
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Populares</a></li>
+                    <li><a class="dropdown-item" href="#">Menos populares</a></li>
+                    <li><a class="dropdown-item" href="#">Ordem alfabética</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container" id="container">
+
+        <div class="row justify-content-between" id="container2">
+          <div class="col-xl-3 d-none d-xl-block">
+            <div class="buscar">
+
+              <div>
+                <span class="d-flex eyebrow text-muted mb-2">BUSCAR</span>
+              </div>
+  
+              <div class="search-box">
+                <input class="search-txt" type="text" name="" placeholder="Tipo de Busca">
+                <a class="search-bnt" href="#">
+                  <img src="../img/icon_lupa.png" alt="icon_lupa" width="20px">
+                </a>
+              </div>
+            </div>
+            
+
+            
+
+            <div class="widget">
+              <span class="d-flex eyebrow text-muted mb-2">Categorias mais lidas</span>
+              <ul class="list-unstyled">
+
+                
+                <li>
+                  <div class="">
+                    <label cass="">
+                      
+                      Ação
+                      <input type="checkbox" class="checkbox" checked>
+                    </label>
+                    
+                  </div>
+                </li>
+                
+
+                <li>
+                  <div class="form-check form-check-minimal">
+                    <input class="form-check-input" type="checkbox" value="" id="brand-1" checked>
+                    <label class="form-check-label" for="brand-1">
+                      Ação
+                    </label>
+                  </div>
+                </li>
+                <li class="mt-1">
+                  <div class="form-check form-check-minimal">
+                    <input class="form-check-input" type="checkbox" value="" id="brand-2">
+                    <label class="form-check-label" for="brand-2">
+                      Aventura
+                    </label>
+                  </div>
+                </li>
+                <li class="mt-1">
+                  <div class="form-check form-check-minimal">
+                    <input class="form-check-input" type="checkbox" value="" id="brand-3">
+                    <label class="form-check-label" for="brand-3">
+                      Ficção
+                    </label>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+
+            <div class="widget mt-5">
+              <span class="d-flex eyebrow text-muted mb-2">Autores populares</span>
+              <ul class="list-unstyled">
+                <li>
+
+                  <div class="form-check form-check-color">
+                    <input class="form-check-input" type="checkbox" value="" id="color-1">
+                    <label class="form-check-label" for="color-1">
+                      <span class="bg-red"><img src="../img/icon_escritor.png" alt="icon_escritor"></span>  Colleen Hoover
+                    </label>
+                  </div>
+                </li>
+                <li class="mt-1">
+                  <div class="form-check form-check-color">
+                    <input class="form-check-input" type="checkbox" value="" id="color-2">
+                    <label class="form-check-label" for="color-2">
+                      <span class="bg-blue"><img src="../img/icon_escritor.png" alt="icon_escritor"></span> Napoleon Hill
+                    </label>
+                  </div>
+                </li>
+                <li class="mt-1">
+                  <div class="form-check form-check-color">
+                    <input class="form-check-input" type="checkbox" value="" id="color-3">
+                    <label class="form-check-label" for="color-3">
+                      <span class="bg-green"><img src="../img/icon_escritor.png" alt="icon_escritor"></span> Clarissa Pinkola
+                    </label>
+                  </div>
+                </li>
+                <li class="mt-1">
+                  <div class="form-check form-check-color">
+                    <input class="form-check-input" type="checkbox" value="" id="color-4">
+                    <label class="form-check-label" for="color-4">
+                      <span class="bg-yellow"><img src="../img/icon_escritor.png" alt=""></span> Taylor Jenkins 
+                    </label>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            
+          </div>
+          <!----------------------------------- fim do pesquisar -------------------------------------->
+
+          
+
+          <!-- produtos/ carouel -->
+          <div class="col-xl-9">
+            <div id="div_banner">
+              <img src="../img/banner3.png" width="100%" id="banner" alt="banner">
+            </div>
+
+            
+            <div class="owl-carousel owl-theme">
+              <div class="item">
+                <div class="card">
+                  <img src="../img/a ciencia do amor.png" alt="alt-image" class="card-img-top">
+
+                </div>
+              </div>
+              <div class="item">
+                <img src="../img/a hipótese do amor.webp" alt="alt-image" class="card-img-top">
+              </div>
+              <div class="item">
+                <img src="../img/livro2.jpg" alt="alt-image" class="card-img-top">
+              </div>
+              <div class="item">
+                <img src="../img/livro3.jpg" alt="alt-image" class="card-img-top">
+              </div>
+              <div class="item">
+                <img src="../img/livro4.jfif" alt="alt-image" class="card-img-top">
+              </div>
+              <div class="item">
+                <img src="../img/livro5.jpg" alt="alt-image" class="card-img-top">
+              </div>
+              <div class="item">
+                <img src="../img/livro6.jpg" alt="alt-image" class="card-img-top">
+              </div>
+            </div>
+
+            <!--<div class="owl-carousel owl-theme">
+    <div class="item"><img src="../img/a ciencia do amor.png" alt="alt-image" class="card-img-top"></div>
+    <div class="item"><img src="../img/a hipótese do amor.webp" alt="alt-image" class="card-img-top"></div>
+    <div class="item"><img src="../img/livro2.jpg" alt="alt-image" class="card-img-top"></div>
+    <div class="item"><img src="../img/livro3.jpg" alt="alt-image" class="card-img-top"></div>
+    <div class="item"><img src="../img/livro4.jfif" alt="alt-image" class="card-img-top"></div>
+    <div class="item"><img src="../img/livro5.jpg" alt="alt-image" class="card-img-top"></div>
+    <div class="item"><img src="../img/livro6.jpg" alt="alt-image" class="card-img-top"></div>
+</div>-->
+
+
+
+  <div>
+    <input type="checkbox" id="checkbox"/>
+    <label for="checkbox">o
+      <svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+        <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+          <path d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z" id="heart" fill="#AAB8C2"/>
+          <circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5"/>
+
+          <g id="grp7" opacity="0" transform="translate(7 6)">
+            <circle id="oval1" fill="#9CD8C3" cx="2" cy="6" r="2"/>
+            <circle id="oval2" fill="#8CE8C3" cx="5" cy="2" r="2"/>
+          </g>
+
+          <g id="grp6" opacity="0" transform="translate(0 28)">
+            <circle id="oval1" fill="#CC8EF5" cx="2" cy="7" r="2"/>
+            <circle id="oval2" fill="#91D2FA" cx="3" cy="2" r="2"/>
+          </g>
+
+          <g id="grp3" opacity="0" transform="translate(52 28)">
+            <circle id="oval2" fill="#9CD8C3" cx="2" cy="7" r="2"/>
+            <circle id="oval1" fill="#8CE8C3" cx="4" cy="2" r="2"/>
+          </g>
+
+          <g id="grp2" opacity="0" transform="translate(44 6)">
+            <circle id="oval2" fill="#CC8EF5" cx="5" cy="6" r="2"/>
+            <circle id="oval1" fill="#CC8EF5" cx="2" cy="2" r="2"/>
+          </g>
+
+          <g id="grp5" opacity="0" transform="translate(14 50)">
+            <circle id="oval1" fill="#91D2FA" cx="6" cy="5" r="2"/>
+            <circle id="oval2" fill="#91D2FA" cx="2" cy="2" r="2"/>
+          </g>
+
+          <g id="grp4" opacity="0" transform="translate(35 50)">
+            <circle id="oval1" fill="#F48EA7" cx="6" cy="5" r="2"/>
+            <circle id="oval2" fill="#F48EA7" cx="2" cy="2" r="2"/>
+          </g>
+
+          <g id="grp1" opacity="0" transform="translate(24)">
+            <circle id="oval1" fill="#9FC7FA" cx="2.5" cy="3" r="2"/>
+            <circle id="oval2" fill="#9FC7FA" cx="7.5" cy="2" r="2"/>
+          </g>
+        </g>
+      </svg>
+    </label>
+
+  </div>
+
+  
+
+
+            
+            </div><!-- lado direito (banner) -->
+            </div><!--container2-->
+      </div><!--container-->
+
+      
+
+      <footer class="footer">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Facebook -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+      
+            <!-- Twitter -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-twitter"></i
+            ></a>
+      
+            <!-- Google -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-google"></i
+            ></a>
+      
+            <!-- Instagram -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-instagram"></i
+            ></a>
+      
+            <!-- Linkedin -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+      
+            <!-- Github -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-github"></i
+            ></a>
+          </section>
+          <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+      
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2023 Copyright:
+          <a class="text-white" href="https://mdbootstrap.com/">Nomedabiblioteca</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+            <!----------------------------------------------------------------------->
+
+            
+
+    <script src="js.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- javascipt jquery -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- owl carousel min.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/vendors/jquery.mousewheel.min.js"></script>
+
+    <!-- owl carousel init -->
+    <script>
+     /* $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})*/
+
+var owl = $('.owl-carousel');
+owl.owlCarousel({
+    center: true,
+    items:2,
+    loop:true,
+    margin:10,
+    nav:true,
+   /* responsive:{
+      600:{
+            items:6
+        },
+    }*/responsive:{
+        0:{
+            items:4,
+            nav:true
+        },
+        600:{
+            items:5,
+            nav:false
+        },
+        1000:{
+            items:5,
+            nav:true,
+            
+        }
+    }
+})
+
+
+owl.on('mousewheel', '.owl-stage', function (e) {
+    if (e.deltaY>0) {
+        owl.trigger('next.owl');
+    } 
+    else {
+        owl.trigger('prev.owl');
+    }
+    e.preventDefault();
+});
+
+
+
+/*$('.loop').owlCarousel({
+    center: true,
+    items:2,
+    loop:true,
+    margin:10,
+    responsive:{
+        600:{
+            items:4
+        }
+    }
+});*/
+
+    </script>
+
+
+
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  
+  </body>
+</html>
