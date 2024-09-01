@@ -1,0 +1,10 @@
+:root{
+    --azul: #000000;
+    --azul-escuro:#000000;
+    --preto: #444;
+    --claro:#666;
+    --border: .1rem solid rgba(0,0,0,.1);
+    --border-hover: .1rem solid #444;
+    --box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
